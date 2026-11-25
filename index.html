@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Rentura · Baku studio</title><link rel="stylesheet" href="style.css"></head>
+<body><header><strong>Rentura<span> / </span>Studio</strong><small>Baku, Azerbaijan</small></header>
+<main><section id="viewport" aria-label="Interactive apartment"><div id="label">Apartment view</div></section>
+<aside><p class="eyebrow">INTERACTIVE WALKTHROUGH</p><h1>The Baku <br>studio.</h1><p class="summary">A bedroom suite with a double vanity and a separate shower. Explore the layout or make it your own.</p>
+<h2>View</h2><div class="row"><button id="walk" aria-pressed="true">Walk inside</button><button id="edit" aria-pressed="false">Edit layout</button></div>
+<div id="design" hidden><label>Furniture<select id="item"><option>Bed</option><option>Chair</option><option>Console</option></select></label><div class="row"><button id="rotate">Rotate 90°</button><button id="swap">Swap model</button></div><p>Drag a piece across the plan. Placement stays clear of walls and other pieces.</p></div>
+<h2>Atmosphere</h2><label>Weather<select id="weather"><option>Sunny</option><option>Overcast</option><option>Rain</option><option>Night</option></select></label>
+<button id="lights" aria-pressed="false">Room lights · off</button>
+<h2>Controls</h2><p id="help">WASD or arrow keys to walk. Click once, then move your mouse to look. Esc releases the mouse. On touch, drag to look.</p>
+<div id="pad"><button data-key="KeyA">←</button><button data-key="KeyW">↑</button><button data-key="KeyS">↓</button><button data-key="KeyD">→</button></div>
+<p id="status" aria-live="polite"></p><footer>Scale assumed from the supplied plan. Sample Baku location, approximate heights and finishes. <a href="https://www.openstreetmap.org/?mlat=40.370588&mlon=49.836081#map=18/40.370588/49.836081" target="_blank" rel="noopener">Map location ↗</a> · Buildings © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL).</footer></aside></main>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js"}}</script>
+<script type="module" src="studio.js?v=3"></script></body></html>
+
